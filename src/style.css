@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.navbar {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 100px;
+}
+
+.header {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+}
+
+.links > a {
+    text-decoration: none;
+    color: black;
+    margin: 0 30px;
+    font-size: 1.25rem;
+}
+
+.links > a:hover {
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.home {
+    height: 799px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("../public/images/vanlifehome.png") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: -200px;
+    position: relative;
+    min-width: 1000px;
+}
+
+.home--container {
+    position: absolute;
+    left: 100px;
+    top: 300px;
+    width: 800px;
+    color: white;
+}
+
+.home--header {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.home--btn {
+    display: block;
+    width: 800px;
+    height: 80px;
+    padding: 25px 0;
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FF8C38;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+}
+
+.home--btn:hover {
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.about {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+}
+
+.about--img {
+    margin: 20px 40px 40px 40px;
+    border-radius: 20px;
+}
+
+.about--info {
+    margin-right: 80px;
+    min-width: 675px;
+}
+
+.about--header {
+    margin-top: 80px;
+    color: #252525;
+    font-size: 3rem;
+}
+
+.about--subheader {
+    color: #252525;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.about--explore {
+    margin: 125px 0 0 30px;
+    background-color: #FFCC8D;
+    max-width: 800px;
+    height: 325px;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.explore--header {
+    color: #252525;
+    font-size: 2rem;
+}
+
+.explore--btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    background-color: #252525;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.explore--btn:hover {
+    text-decoration: underline;
+    font-size: 1.05rem;
+}
+
+
+.footer {
+    background-color: #252525;
+    color: #AAAAAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
