@@ -2,7 +2,7 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 
 export default function HostVanInfo() {
-    const [currentVan, setCurrentVan] = useOutletContext();
+    const {currentVan} = useOutletContext();
     return (
         <div>
             <p className="hostvan--text"><span className="bolded">Name: </span>{currentVan.name}</p>

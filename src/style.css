@@ -29,10 +29,33 @@ body {
     background-color: antiquewhite;
 }
 
-main {
+main, .main {
     background-color: antiquewhite;
     min-height: 800px;
 }
+
+.notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notfound > h1 {
+    width: 600px;
+    font-size: 3rem;
+}
+
+.notfound > a:hover {
+    font-size: 1.75rem;
+}
+
+.notfound > a {
+    background-color: #161616;
+    width: 500px;
+    font-size: 1.75rem;
+}
+
 
 .navbar {
     background-color: antiquewhite;
@@ -66,6 +89,73 @@ main {
 .link--unselected:hover, .link--selected {
     color: black;
     margin: 0 30px;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login > h1 {
+    font-size: 2.5rem;
+}
+
+.red {
+    color: #cc0000;
+}
+
+.login--form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;   
+}
+
+.login--form > input {
+    border: 1px solid rgba(209, 213, 219);
+    height: 60px;
+    text-indent: 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    font-weight: 400;
+}
+
+.login--form > input:focus {
+    outline: none;
+}
+
+.login--form > input:first-of-type {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.login--form > input:last-of-type {
+    border-radius: 0px 0px 6px 6px;
+    border-top: none;
+}
+
+.login--form > button {
+    background-color: #FF8C38;
+    border: none;
+    border-radius: 6px;
+    height: 55px;
+    margin-top: 22px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.login-form > button:disabled {
+    background-color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+.login--form > button:hover {
     text-decoration: underline;
     font-size: 1.3rem;
 }
@@ -185,7 +275,9 @@ main {
     padding: 10px 20px;
     border: 0;
     border-radius: 3px;
+    color: black;
     background-color: #FFCC8D;
+    text-decoration: none;
     font-family: "Inter", sans-serif;
     cursor: pointer;
 }
@@ -195,7 +287,9 @@ main {
 }
 
 .vans--tagclear {
+    color: black;
     background-color: transparent;
+    text-decoration: none;
     border: 0;
     font-family: "Inter", sans-serif;
     cursor: pointer;
@@ -271,17 +365,17 @@ main {
     text-align: center;
 }
 
-.van--type.simple:hover, .van--type.simple.selected, .simple:hover {
+.simple:hover, .simple.selected{
     background-color: #E17654;
     color: white;
 }
 
-.van--type.rugged:hover, .van--type.rugged.selected, .rugged:hover {
+.rugged:hover, .rugged.selected {
     background-color: #115E59;
     color: white;
 }
 
-.van--type.luxury:hover, .van--type.luxury.selected, .luxury:hover {
+.luxury:hover, .luxury.selected {
     background-color: #161616;
     color: white;
 }
